@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Avatar:</b>
+  <%= @stylist.avatar %>
+</p>
+
+<p>
+  <b>Full name:</b>
+  <%= @stylist.full_name %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @stylist.email %>
+</p>
+
+<p>
+  <b>Password:</b>
+  <%= @stylist.password %>
+</p>
+
+<p>
+  <b>Phone number:</b>
+  <%= @stylist.phone_number %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @stylist.location %>
+</p>
+
+<p>
+  <b>Salon name:</b>
+  <%= @stylist.salon_name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @stylist.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_stylist_path(@stylist) %> |
+<%= link_to 'Back', stylists_path %>

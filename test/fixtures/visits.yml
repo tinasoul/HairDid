@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  front_photo: MyString
+  side_photo: MyString
+  back_photo: MyString
+  description: MyText
+  date_of_visit: 2013-08-04
+
+two:
+  front_photo: MyString
+  side_photo: MyString
+  back_photo: MyString
+  description: MyText
+  date_of_visit: 2013-08-04

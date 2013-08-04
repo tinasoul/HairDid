@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Front photo:</b>
+  <%= @visit.front_photo %>
+</p>
+
+<p>
+  <b>Side photo:</b>
+  <%= @visit.side_photo %>
+</p>
+
+<p>
+  <b>Back photo:</b>
+  <%= @visit.back_photo %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @visit.description %>
+</p>
+
+<p>
+  <b>Date of visit:</b>
+  <%= @visit.date_of_visit %>
+</p>
+
+
+<%= link_to 'Edit', edit_visit_path(@visit) %> |
+<%= link_to 'Back', visits_path %>

@@ -1,4 +1,13 @@
 HairDid::Application.routes.draw do
+  resources :visits
+
+
+  resources :clients
+
+
+  resources :stylists
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
