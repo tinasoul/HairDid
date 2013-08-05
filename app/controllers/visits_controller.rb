@@ -40,11 +40,12 @@ class VisitsController < ApplicationController
   # POST /visits
   # POST /visits.json
   def create
-    @visit = Visit.new(params[:visit])
+    @client = Client.find(params[:client_id])
+    @visit = @client.visits.build(params[:visit])
 
     respond_to do |format|
       if @visit.save
-        format.html { redirect_to @visit, notice: 'Visit was successfully created.' }
+        format.html { redirect_to :back, notice: 'Visit was successfully created.' }
         format.json { render json: @visit, status: :created, location: @visit }
       else
         format.html { render action: "new" }

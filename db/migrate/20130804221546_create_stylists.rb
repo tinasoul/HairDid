@@ -9,6 +9,7 @@ class CreateStylists < ActiveRecord::Migration
       t.string :phone_number
       t.string :location
       t.string :salon_name
+      # t.references :client
       t.timestamps
     end
   end

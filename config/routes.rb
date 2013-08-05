@@ -1,11 +1,17 @@
 HairDid::Application.routes.draw do
-  resources :visits
+  
+  root :to => "client#index"
 
+  resources :stylists
 
   resources :clients
 
+  resources :visits
 
-  resources :stylists
+
+   resources :clients do
+    resources :visits
+  end
 
 
   # The priority is based upon order of creation:
